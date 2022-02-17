@@ -11,7 +11,6 @@ export const js = () => {
         })
       )
     )
-    .pipe(app.gulp.dest(app.path.build.js))
     .pipe(
       webpack({
         mode: app.isBuild ? "production" : "development",
