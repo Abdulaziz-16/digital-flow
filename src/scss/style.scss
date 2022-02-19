@@ -113,8 +113,11 @@ button {
     }
   }
   &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh 0 50vh;
     &__title {
-      margin-top: 175px;
       font-size: 74px;
       line-height: 90px;
       text-transform: uppercase;
@@ -130,9 +133,16 @@ button {
       text-align: center;
       color: $black;
     }
-    &__btn{
+    &__btn {
       margin-top: 60px;
       padding: 20px 30px;
+      display: flex;
+      color: $black;
+      border: 1px solid $black;
+      &__img {
+        width: 30px;
+        margin-left: 45px;
+      }
     }
   }
 }
