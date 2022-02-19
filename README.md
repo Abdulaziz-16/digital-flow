@@ -1,7 +1,8 @@
 # digital-flow
 Landing page
 <!-- Install -->
-npm i
+npm i<br>
+npm clean cache --force
 <!-- Run -->
 npm run dev <br>
 npm run build<br>
