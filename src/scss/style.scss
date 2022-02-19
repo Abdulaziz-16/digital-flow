@@ -89,6 +89,7 @@ button {
 .header {
   background: url(@img/main-bg.png) no-repeat center;
   background-size: cover;
+  position: relative;
   &-nav {
     display: flex;
     justify-content: space-between;
@@ -135,13 +136,100 @@ button {
     }
     &__btn {
       margin-top: 60px;
-      padding: 20px 30px;
-      display: flex;
-      color: $black;
+
       border: 1px solid $black;
-      &__img {
-        width: 30px;
-        margin-left: 45px;
+      display: flex;
+      &__link {
+        padding: 20px 30px;
+        display: flex;
+        color: $black;
+        &_img {
+          width: 45px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  &-left {
+    // display: none;
+    position: absolute;
+    right: 0;
+    // right: -40%;
+    top: 0;
+    width: 40%;
+    padding: 40px 80px;
+    height: 100%;
+    background: #191a1e;
+    &__btn {
+    margin-bottom: 80px;
+      &__link {
+        margin-bottom: 90px;
+        opacity: 0.3;
+        cursor: pointer;
+        &:hover {
+          transition: 0.8s;
+          opacity: 1;
+        }
+        & box-icon{
+          color: #fff;
+          font-size: 30px;
+        }
+      }
+    }
+    &-menu {
+      margin-bottom: 220px;
+      &__item {
+        padding: 20px 0;
+        &__link {
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          color: $white;
+          opacity: 0.3;
+          transition: 0.8s;
+
+          &:hover {
+            transition: 0.8s;
+            opacity: 1;
+            border-bottom: 1px solid $white;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+    &-btn {
+      background: $grad1;
+      display: inline-flex;
+
+      &__link {
+        padding: 20px 30px;
+        display: flex;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        &_img {
+          width: 45px;
+          margin-left: 60px;
+        }
+      }
+    }
+    &-social {
+      display: flex;
+      margin-top: 100px;
+
+      &__item {
+        margin: 0 5px;
+        width: 40px;
+        height: 40px;
+        background: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        &__link {
+          font-size: 30px;
+        }
       }
     }
   }

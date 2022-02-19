@@ -3,8 +3,8 @@ Landing page
 <!-- Install -->
 npm i
 <!-- Run -->
-npm run dev
-npm run build
-npm run zip
-npm run deploy
+npm run dev <br>
+npm run build<br>
+npm run zip<br>
+npm run deploy<br>
 npm run svgSprive
